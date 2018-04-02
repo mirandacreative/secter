@@ -1,0 +1,217 @@
+.custom-content .secter-right-expertise-item-editor-home {
+    width: calc(25% - 20px);
+    padding: 10px;
+    float: left;
+}
+
+.custom-content .secter-success-stories-item-editor-home,
+.custom-content .secter-comprehensive-information-item-editor-home {
+    width: calc(33.333333% - 20px);
+    padding: 10px;
+    float: left;
+}
+
+.custom-content .success-stories {
+    text-align: center;
+}
+
+.custom-content .success-stories .file_upload,
+.custom-content .success-stories .delete-item {
+    float: left;
+}
+
+.progress_file_upload {
+    display: none;
+}
+
+.progress_file_upload span {
+    display: block;
+}
+
+.custom-content .text-right-expertise,
+.custom-content .text-success-stories,
+.custom-content .text-comprehensive-information {
+    max-height: 100px;
+}
+
+.custom-content .title-right-expertise,
+.custom-content .link-right-expertise,
+.custom-content .title-success-stories,
+.link-image,
+.custom-content .link-success-stories,
+.link-comprehensive-information,
+.title-comprehensive-information,
+.title-staff,
+.email-staff,
+.phone-staff,
+.website-towns,
+.link-towns,
+.title-towns,
+.website-town,
+.link-town,
+.title-town,
+.title-board-of-directors,
+.title-business-resource,
+.title-about-us,
+.title-link-newsletter,
+.link-newsletter,
+.main-block-title,
+.main-block-subtitle,
+.title-special-landing-featured-properties,
+.link-special-landing-featured-properties,
+.title-special-landing-article,
+.title-industry-clusters-article,
+.link-industry-clusters-article,
+.title-business-resources-article,
+.link-business-resources-article,
+.title-programs-article,
+.link-programs-article,
+.title-programs,
+.link-special-landing-article,
+.subtitle-special-block-industry-clusters {
+    width: 100%;
+}
+
+.custom-content .text-special-landing-main,
+.text-special-landing-featured-properties {
+    height: 200px;
+}
+
+.custom-content .image-uploader {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    min-height: 0;
+    max-height: 140px;
+}
+
+.custom-content .image-uploader {
+    height: 160px;
+}
+
+.custom-content .add-item-button,
+.custom-content .delete-item-button {
+    width: 100%;
+    clear: both;
+}
+
+.custom-content h2 {
+    clear: both;
+    font-size: 24px !important;
+}
+
+.custom-content .secter-staff-item-editor .block-uploader,
+.custom-content .secter-board-of-directors-item-editor .block-uploader,
+.custom-content .secter-business-resource-item-editor .block-uploader,
+.custom-content .secter-towns-item-editor .block-uploader,
+.custom-content .secter-town-item-editor .block-uploader,
+.custom-content .secter-programs-item-editor .block-uploader {
+    width: 250px;
+    float: left;
+}
+
+.custom-content .secter-staff-item-editor .wp-editor-wrap,
+.custom-content .secter-board-of-directors-item-editor .wp-editor-wrap,
+.custom-content .secter-business-resource-item-editor .wp-editor-wrap,
+.custom-content .secter-towns-item-editor .wp-editor-wrap,
+.custom-content .secter-town-item-editor .wp-editor-wrap,
+.custom-content .secter-programs-item-editor .wp-editor-wrap {
+    float: left;
+    width: calc(100% - 270px);
+    margin-left: 20px;
+}
+
+.custom-content .text-staff,
+.custom-content .text-board-of-directors,
+.custom-content .text-business-resource,
+.custom-content .text-programs,
+.custom-content .text-town,
+.custom-content .text-towns,
+.custom-content .text-special-landing-article,
+.custom-content .text-industry-clusters-data {
+    height: 200px;
+}
+
+.custom-content .text-towns-main,
+.custom-content .text-town-main {
+    height: 400px;
+}
+
+.custom-content textarea {
+    color: black !important;
+}
+
+.custom-content .secter-featured-properties-item-editor {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.custom-content.secter-special-landing-featured-properties-editor {
+    width: 25%;
+}
+
+.custom-content .secter-special-landing-slider-item-editor,
+.custom-content .secter-text-special-landing-article-item-editor,
+.custom-content .secter-text-industry-clusters-data-item-editor,
+.custom-content .secter-text-industry-clusters-article-item-editor,
+.custom-content .secter-text-business-resources-article-item-editor,
+.custom-content .secter-text-programs-article-item-editor {
+    width: calc(33.3333333% - 20px);
+    padding-right: 20px;
+    float: left;
+}
+
+.custom-content .text-special-landing-slider {
+    height: 200px;
+}
+
+.banner-industry-clusters img {
+    width: 100%;
+}
+
+.custom-content .ui-sortable-helper {
+    background: #f1f1f1;
+    z-index: 99999 !important;
+}
+
+.image-uploader-block {
+    width: 100%;
+}
+
+.image-uploader-block img {
+    width: 200px;
+    margin: 10px 0;
+}
+
+.custom-content.left-block,
+.custom-content.right-block {
+    width: 45%;
+    margin-right: 20px;
+    float: left;
+}
+
+.custom-content.left-block label,
+.custom-content.right-block label {
+    width: 100%;
+    display: block;
+}
+
+.custom-content.left-block label span {
+    display: inline-block;
+    width: 80px;
+}
+
+.custom-content.right-block label span {
+    display: inline-block;
+    width: 120px;
+}
+
+.custom-content.right-block label input {
+    width: 50%;
+}
+
+.custom-content .address-contact-form {
+    height: 100px;
+}

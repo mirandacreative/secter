@@ -1,0 +1,193 @@
+.search .banner {
+    width: 100%;
+    position: relative;
+    background-color: #e6e6e6;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+.search .banner .count,
+.search .banner .text-block-search-count {
+    float: left;
+}
+
+.search .banner .count span {
+    color: #c7c7c7;
+    font-family: "Roboto Condensed Light";
+    font-size: 72px;
+    line-height: normal;
+}
+
+.search .banner .text-block-search-count {
+    padding-top: 15px;
+    padding-left: 20px;
+    word-break: break-all;
+}
+
+.search .banner .text-block-search-count span {
+    display: block;
+}
+
+.search .banner .text-block-search-count .search-for {
+    font-family: "Roboto";
+    color: #bbb;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.search .banner .text-block-search-count .search-word {
+    font-family: "Roboto";
+    color: #37a4ae;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.search .banner .relative-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.search .banner .relative-block .title {
+    display: block;
+    background: #fff;
+    padding: 30px 0;
+    color: #1296a2;;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.search .content {
+    padding-top: 20px;
+    min-height: 270px;
+    padding-bottom: 90px;
+}
+
+.search .content article {
+    margin-top: 50px;
+}
+
+.search .content article .title {
+    color: #1296a2;
+    font-size: 24px;
+    padding-bottom: 5px;
+    display: inline-block;
+    font-family: "Roboto Condensed Light";
+}
+
+.search .content article .excerpt {
+    color: #666;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.search .content article .read-more {
+    color: #666;
+    font-family: "Roboto";
+    padding-top: 20px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.search .content article .read-more:after {
+    font-family: "FontAwesome";
+    content: "\f138";
+    padding-left: 5px;
+}
+
+.search .content .empty {
+    font-family: "Roboto Condensed";
+    font-size: 60px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.search .pagination {
+    margin: 50px auto 0;
+    display: block;
+    text-align: center;
+}
+
+.search .pagination a {
+    color: #666
+}
+
+.search .pagination .prev:after,
+.search .pagination .next:after {
+    font-family: 'FontAwesome';
+    content: "\f137";
+    display: inline-block;
+}
+
+.search .pagination .next:after {
+    font-family: 'FontAwesome';
+    content: "\f138";
+    display: inline-block;
+}
+
+.search .pagination .current {
+    color: #1296a2;
+}
+
+@media (max-width: 991px) {
+
+    .search .banner{
+        padding-bottom: 70px;
+        padding-top: 20px;
+    }
+
+    .search .banner .search-count{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .search .banner .count span{
+        font-size: 50px;
+    }
+
+    .search .banner .text-block-search-count .search-for,
+    .search .banner .text-block-search-count .search-word{
+        font-size: 16px;
+    }
+
+    .search .banner .text-block-search-count{
+        padding-top: 0;
+    }
+
+    .search .banner .relative-block .title {
+        padding: 14px 0;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .search .pagination {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .search .content article {
+        margin: 20px 15px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .search .content article .title:hover {
+        color: #666;
+    }
+
+    .search .content article .read-more:hover{
+        color: #1296a2;
+    }
+
+    .search .pagination a:hover {
+        color: #1296a2;
+    }
+}

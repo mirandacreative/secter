@@ -1,0 +1,66 @@
+.page .banner {
+    width: 100%;
+    position: relative;
+}
+
+.page .banner img {
+    width: 100%;
+    min-height: 150px;
+    height: 100%;
+    display: block;
+}
+
+.page .banner .relative-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.page .banner .relative-block h1 {
+    display: block;
+    background: #fff;
+    padding: 30px 0;
+    color: #666;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.page .content {
+    padding: 20px 0;
+}
+
+.page .content img {
+    height: auto;
+    padding: 0 0 10px;
+    width: 100%;
+    display: block;
+}
+
+.page .content p img {
+    padding: 0;
+}
+
+.page .content a {
+    color: #1296a2;
+    text-decoration: underline;
+}
+
+.page .content p {
+    padding: 0 0 10px;
+}
+
+@media (max-width: 991px) {
+
+    .page .banner img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .page .banner .relative-block h1 {
+        padding: 14px 0;
+        text-align: center;
+        font-size: 24px;
+    }
+}

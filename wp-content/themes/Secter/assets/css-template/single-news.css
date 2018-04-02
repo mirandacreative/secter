@@ -1,0 +1,129 @@
+.single-news .banner {
+    width: 100%;
+    position: relative;
+}
+
+.single-news .banner img {
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    display: block;
+}
+
+.single-news .banner .relative-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.single-news .banner .relative-block span {
+    display: block;
+    background: #fff;
+    padding: 30px 0;
+    color: #666;
+    text-align: center;
+    font-family: "Roboto Condensed Light";
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.single-news .thumbnail-img {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: block;
+    width: 100%;
+}
+
+.single-news .title {
+    color: #2a9eab;
+    font-family: "Roboto Condensed Light";
+    font-size: 46px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.single-news .time {
+    color: #666;
+    font-family: Roboto;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.single-news .text-block{
+    font-family: Roboto;
+    font-size: 16px;
+    color: #666;
+}
+
+.single-news .text-block p{
+    padding-bottom: 30px;
+    line-height: 24px;
+}
+
+.single-news .text-block a{
+    color: #1296a2;
+    text-decoration: underline;
+}
+
+.single-news .article{
+    padding-bottom: 70px;
+}
+
+.single-news .sidebar {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.single-news .sidebar .widget {
+    margin-top: 50px;
+}
+
+.single-news .widget h2 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #1296a2;
+    font-family: Roboto;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.single-news .widget ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.single-news .widget li a {
+    display: block;
+    padding: 10px 0;
+    color: #666;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+@media (max-width: 991px) {
+
+    .single-news .banner img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .single-news .banner .relative-block span {
+        padding: 14px 0;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .single-news .sidebar {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .single-news .sidebar .widget {
+        margin-top: 20px;
+    }
+}

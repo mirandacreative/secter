@@ -1,0 +1,322 @@
+.industry-cluster .banner {
+    width: 100%;
+    position: relative;
+}
+
+.industry-cluster .banner .relative-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.industry-cluster .banner .relative-block .title {
+    display: block;
+    padding: 30px 0;
+    color: #082d3f;
+    text-align: center;
+    font-family: "Roboto Condensed Light";
+    font-size: 42px;
+    text-transform: uppercase;
+    background: #fff;
+}
+
+.industry-cluster .wrapper {
+    position: relative;
+}
+
+.industry-cluster .sidebar {
+    display: block;
+    width: 100%;
+    background: white;
+}
+
+.industry-cluster .mobile-sidebar {
+    display: none;
+}
+
+.industry-cluster .sidebar .menu .open-button {
+    top: 10px;
+    right: 10px;
+    z-index: 99999;
+    position: absolute;
+}
+
+.industry-cluster .sidebar .menu > li > .open-button {
+    top: 20px;
+    right: 10px;
+    z-index: 9;
+    position: absolute;
+}
+
+.industry-cluster .sidebar .menu .open-button:hover {
+    cursor: pointer;
+}
+
+.industry-cluster .sidebar .menu .open-button:after {
+    font-family: "FontAwesome";
+    content: "\f055";
+    color: #aaa;
+}
+
+.industry-cluster .sidebar .menu .open > .open-button:after {
+    content: "\f056";
+}
+
+.industry-cluster .sidebar .menu li {
+    position: relative;
+}
+
+.industry-cluster .sidebar .menu {
+    padding: 40px 60px 0 0;
+}
+
+.industry-cluster .sidebar .menu a {
+    display: inline-block;
+    color: #666;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.industry-cluster .sidebar .menu .sub-menu {
+    display: none;
+    list-style-type: disc;
+}
+
+.industry-cluster .sidebar .menu > li > ul {
+    padding: 0 0 30px 40px !important;
+    list-style-type: disc;
+}
+
+.industry-cluster .sidebar .menu li {
+    padding: 10px 0 0;
+}
+
+.industry-cluster .sidebar .menu > li > ul > li {
+    padding: 10px 0;
+}
+
+.industry-cluster .sidebar .menu > li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0;
+}
+
+.industry-cluster .sidebar .menu {
+    list-style-type: none;
+}
+
+.industry-cluster .sidebar .menu > li > a {
+    padding: 20px 10px;
+    text-transform: uppercase;
+}
+
+.industry-cluster .banner img {
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    display: block;
+}
+
+.industry-cluster .content {
+    margin-top: 40px;
+    margin-bottom: 95px;
+}
+
+.industry-cluster .content a {
+    color: #1296a2;
+    display: inline-block;
+    font-family: "Roboto";
+}
+
+.industry-cluster .content .title {
+    display: block;
+    color: #1296a2;
+    font-family: "Roboto Condensed Light";
+    font-size: 44px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.industry-cluster .main-block,
+.industry-cluster .second-block {
+    color: #666;
+    line-height: normal;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.industry-cluster .list-items .item {
+    margin-top: 20px;
+}
+
+.industry-cluster .list-items .item .text-block {
+    color: #666;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.industry-cluster .content img {
+    display: block;
+    width: 100%;
+}
+
+.industry-cluster .content p img {
+    padding-top: 20px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.industry-cluster .content .second-block .sub-title {
+    color: #1296a2;
+    line-height: normal;
+    margin-top: 65px;
+    font-family: "Roboto Condensed Light";
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+
+    .industry-cluster .banner img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .industry-cluster .banner .relative-block .title {
+        padding: 14px 0;
+        color: #121f32;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .industry-cluster .mobile-sidebar {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .industry-cluster .mobile-sidebar .current-page {
+        margin-top: 40px;
+        padding: 15px;
+        color: #666;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        position: relative;
+        text-transform: uppercase;
+        border-radius: 3px;
+        border: 1px solid #e4e4e4;
+    }
+
+    .industry-cluster .mobile-sidebar .current-page.open {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .industry-cluster .mobile-sidebar .current-page span {
+        float: right;
+        display: inline-block;
+    }
+
+    .industry-cluster .mobile-sidebar .current-page span:after {
+        font-family: "FontAwesome";
+        content: "\f107";
+    }
+
+    .industry-cluster .mobile-sidebar .current-page.open span:after {
+        content: "\f106";
+    }
+
+    .industry-cluster .mobile-sidebar ul {
+        display: none;
+        background: white;
+        position: absolute;
+        z-index: 2;
+        width: calc(100% - 30px);
+        max-height: 180px;
+        border: 1px solid #e4e4e4;
+        border-top: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .industry-cluster .mobile-sidebar ul li a {
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .industry-cluster .mobile-sidebar {
+        display: block;
+        background: white;
+    }
+
+    .industry-cluster .sidebar {
+        display: none;
+    }
+
+    .industry-cluster .content {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .industry-cluster .content .title {
+        text-align: center;
+        padding: 45px 0 25px;
+        font-size: 28px;
+    }
+
+    .industry-cluster .content .main-block {
+        margin: 0 15px;
+    }
+
+    .industry-cluster .content img {
+        margin: 10px 0 20px;
+    }
+
+    .industry-cluster .content p img {
+        padding: 0;
+    }
+
+    .industry-cluster .content .second-block .sub-title {
+        margin-bottom: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .industry-cluster .banner .relative-block .title {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .industry-cluster .sidebar .menu li:hover,
+    .industry-cluster .sidebar .menu .current-menu-item {
+        border-bottom-color: #2a9daa;
+    }
+
+    .industry-cluster .sidebar .menu span:hover:after {
+        color: #2a9daa;
+    }
+
+    .industry-cluster .sidebar .menu a:hover,
+    .industry-cluster .sidebar .menu .current-menu-item > a {
+        color: #1296a2;
+    }
+
+    .industry-cluster .list-items > div:nth-child(3n+1) .item {
+        margin-left: -15px;
+    }
+
+    .industry-cluster .list-items > div:nth-child(3n+2) .item {
+        margin-right: -7.5px;
+        margin-left: -7.5px;
+    }
+
+    .industry-cluster .list-items > div:nth-child(3n+3) .item {
+        margin-right: -15px;
+    }
+}

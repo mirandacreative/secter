@@ -1,0 +1,515 @@
+.town .banner {
+    width: 100%;
+    position: relative;
+}
+
+.town .banner .relative-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.town .banner .relative-block .title {
+    display: block;
+    padding: 30px 0;
+    line-height: 27px;
+    color: #082d3f;
+    text-align: center;
+    font-family: "Roboto Condensed Light";
+    font-size: 42px;
+    text-transform: uppercase;
+    background: #fff;
+}
+
+.town .wrapper {
+    position: relative;
+}
+
+.town .sidebar {
+    display: block;
+    width: 100%;
+    background: white;
+}
+
+.town .mobile-sidebar {
+    display: none;
+}
+
+.town .sidebar .menu .open-button {
+    top: 10px;
+    right: 10px;
+    z-index: 99999;
+    position: absolute;
+}
+
+.town .sidebar .menu > li > .open-button {
+    top: 20px;
+    right: 10px;
+    z-index: 9;
+    position: absolute;
+}
+
+.town .sidebar .menu .open-button:hover {
+    cursor: pointer;
+}
+
+.town .sidebar .menu .open-button:after {
+    font-family: "FontAwesome";
+    content: "\f055";
+    color: #aaa;
+}
+
+.town .sidebar .menu .open > .open-button:after {
+    content: "\f056";
+}
+
+.town .sidebar .menu li {
+    position: relative;
+}
+
+.town .sidebar .menu {
+    padding: 40px 60px 0 0;
+}
+
+.town .sidebar .menu a {
+    display: inline-block;
+    color: #666;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.town .sidebar .menu .sub-menu {
+    display: none;
+    list-style-type: disc;
+}
+
+.town .sidebar .menu > li > ul {
+    padding: 0 0 30px 40px !important;
+    list-style-type: disc;
+}
+
+.town .sidebar .menu li {
+    padding: 10px 0 0;
+}
+
+.town .sidebar .menu > li > ul > li {
+    padding: 7px 0;
+}
+
+/*.town .sidebar .menu > li > ul > li:first-child {*/
+    /*padding-top: 0;*/
+/*}*/
+
+.town .sidebar .menu > li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0;
+}
+
+.town .sidebar .menu {
+    list-style-type: none;
+}
+
+.town .sidebar .menu > li > a {
+    padding: 20px 10px;
+    text-transform: uppercase;
+}
+
+.town .banner img {
+    width: 100%;
+    min-height: 150px;
+    height: 100%;
+    display: block;
+}
+
+.town .content {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.town .content a {
+    color: #1296a2;
+    display: inline-block;
+    font-family: "Roboto";
+}
+
+.town .select-town-block {
+    background: #1296a2;
+    padding: 25px 30px;
+}
+
+.town .select-town-block h2 {
+    padding-bottom: 15px;
+    color: #fff;
+    font-family: "Roboto Condensed Light";
+    font-size: 32px;
+}
+
+.town .select-town-block .town-selected {
+    padding: 15px 20px;
+    color: #aaa;
+    background: #fff;
+    font-family: "Roboto";
+    font-size: 18px;
+    position: relative;
+}
+
+.town .select-town-block .town-selected:hover {
+    cursor: pointer;
+}
+
+.town .select-town-block .town-selected span {
+    float: right;
+    display: inline-block;
+}
+
+.town .select-town-block .town-selected span:after {
+    font-family: "FontAwesome";
+    content: "\f0d7";
+}
+
+.town .select-town-block .town-selected.open span:after {
+    font-family: "FontAwesome";
+    content: "\f0d8";
+}
+
+.town .select-town-block ul {
+    border-top: 1px solid #efefef;
+    display: none;
+    position: absolute;
+    max-height: 210px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 0 20px;
+    width: calc(100% - 90px);
+    background: white;
+}
+
+.town .select-town-block li {
+    padding: 10px 20px;
+}
+
+.town .select-town-block a {
+    display: block;
+    color: #082d3f;
+}
+
+.town .content h1 {
+    display: block;
+    color: #1296a2;
+    font-family: "Roboto Condensed Light";
+    font-size: 44px;
+    padding: 50px 0 20px;
+    text-transform: uppercase;
+}
+
+.town .main-block p,
+.town .second-block p {
+    color: #666;
+    line-height: normal;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.town .second-block {
+    margin-top: 35px;
+}
+
+.town .second-block .text-block:not(:first-child) {
+    margin-top: 35px;
+}
+
+.town .content img {
+    display: block;
+    width: 100%;
+}
+
+.town .content p img {
+    padding-top: 20px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.town .content .inner-text {
+    margin-left: 20px;
+}
+
+.town .content .inner-text .link,
+.town .content .inner-text .website {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    font-family: "Roboto";
+    text-transform: uppercase;
+}
+
+.town .content .inner-text .link:hover,
+.town .content .inner-text .website:hover {
+    color: #1296a2;
+}
+
+.town .content .inner-text .link {
+    margin-right: 30px;
+}
+
+.town .content .inner-text .website:after,
+.town .content .inner-text .link:after {
+    font-family: "FontAwesome";
+    margin-left: 5px;
+}
+
+.town .content .inner-text .website:after,
+.town .content .inner-text .link:after {
+    content: "\f138";
+}
+
+.town .content .second-block h2 {
+    color: #1296a2;
+    line-height: normal;
+    font-family: "Roboto Condensed Light";
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.featured-properties {
+    background: #efefef;
+}
+
+.featured-properties h2 {
+    color: #666;
+    font-family: "Roboto Condensed";
+    font-size: 44px;
+    padding: 50px 0 35px;
+    text-transform: uppercase;
+}
+
+.featured-properties .item {
+    color: #666;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.featured-properties .item img {
+    width: 100%;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.featured-properties .item .text-block {
+    min-height: 64px;
+}
+
+.featured-properties .item a {
+    color: #121f32;
+    font-family: "Roboto";
+}
+
+.featured-properties .item .pdf {
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 86px;
+    margin: 25px auto 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.featured-properties .item .pdf:after {
+    font-family: "FontAwesome";
+    margin-left: 5px;
+    content: "\f138";
+}
+
+@media (max-width: 991px) {
+
+    .town .banner img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .town .banner .relative-block .title {
+        padding: 14px 0;
+        color: #121f32;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .town .mobile-sidebar {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .town .mobile-sidebar .current-page {
+        margin-top: 40px;
+        padding: 15px;
+        color: #666;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        position: relative;
+        text-transform: uppercase;
+        border-radius: 3px;
+        border: 1px solid #e4e4e4;
+    }
+
+    .town .mobile-sidebar .current-page.open {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .town .mobile-sidebar .current-page span {
+        float: right;
+        display: inline-block;
+    }
+
+    .town .mobile-sidebar .current-page span:after {
+        font-family: "FontAwesome";
+        content: "\f107";
+    }
+
+    .town .mobile-sidebar .current-page.open span:after {
+        content: "\f106";
+    }
+
+    .town .mobile-sidebar ul {
+        display: none;
+        background: white;
+        position: absolute;
+        z-index: 2;
+        width: calc(100% - 30px);
+        max-height: 180px;
+        border: 1px solid #e4e4e4;
+        border-top: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .town .mobile-sidebar ul li a {
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .town .mobile-sidebar {
+        display: block;
+        background: white;
+    }
+
+    .town .sidebar {
+        display: none;
+    }
+
+    .town .content {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .town .content .logo_town {
+        display: none;
+    }
+
+    .town .select-town-block h2 {
+        font-size: 28px;
+    }
+
+    .town .select-town-block {
+        padding: 20px 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .town .select-town-block ul {
+        width: calc(100% - 30px);
+    }
+
+    .town .content h1 {
+        text-align: center;
+        padding: 45px 0 25px;
+        font-size: 28px;
+    }
+
+    .town .content .main-block {
+        margin: 0 15px;
+    }
+
+    .town .content img {
+        margin: 10px 0 20px;
+    }
+
+    .town .content p img {
+        padding: 0;
+    }
+
+    .town .content .inner-text {
+        margin: 0;
+    }
+
+    .town .content .second-block h2 {
+        margin-bottom: 0px;
+    }
+
+    .town .second-block .text-block {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ccc;
+        margin: 25px 15px 0;
+    }
+
+    .town .second-block .text-block:last-child {
+        border-bottom: none;
+    }
+
+    .featured-properties h2{
+        padding: 30px 0 25px;
+    }
+
+    .featured-properties .item .pdf {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .town .banner .relative-block .title {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .featured-properties {
+        padding: 0 15px;
+    }
+
+    .featured-properties .item {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .town .sidebar .menu li:hover,
+    .town .sidebar .menu .current-menu-item {
+        border-bottom-color: #2a9daa;
+    }
+
+    .town .sidebar .menu span:hover:after {
+        color: #2a9daa;
+    }
+
+    .town .sidebar .menu a:hover,
+    .town .sidebar .menu .current-menu-item > a {
+        color: #1296a2;
+    }
+
+    .town .select-town-block li:hover {
+        background-color: #082d3f;
+    }
+
+    .town .select-town-block li:hover a {
+        color: #fff;
+    }
+
+    .featured-properties .item .pdf:hover {
+        color: #2a9eab;
+        border-color: #2a9eab;
+    }
+}

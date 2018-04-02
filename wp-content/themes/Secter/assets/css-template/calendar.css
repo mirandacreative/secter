@@ -1,0 +1,111 @@
+#bigcalendar1 {
+    margin: 0 auto;
+}
+
+#events .banner {
+    width: 100%;
+    position: relative;
+}
+
+#events .banner img {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    display: block;
+}
+
+#events .banner .relative-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#events .banner .relative-block h1 {
+    display: block;
+    background: #fff;
+    padding: 30px 0;
+    color: #666;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+#events .content {
+    padding: 60px 0 100px;
+}
+
+#events .content li {
+    float: left;
+}
+
+#events .content #tabs-calendar > ul {
+    margin-bottom: -1px;
+}
+
+#events .content li a {
+    background-color: #1296a2;
+    color: white;
+    margin: 0;
+    border-radius: 0;
+    font-family: Roboto;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    padding: 30px 60px;
+    border: 1px solid #1296a2;
+}
+
+#events .content li.active a {
+    background: white;
+    color: #1296a2;
+    border: 1px solid #ccc;
+    border-bottom-color: white;
+}
+
+#tabs-calendar .tab-content {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 20px 0;
+}
+
+#events .content p {
+    padding: 0 0 10px;
+}
+
+@media (max-width: 991px) {
+
+    #events .banner img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    #events .banner .relative-block h1 {
+        padding: 14px 0;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    #bigcalendar1 {
+        width: 100% !important;
+    }
+
+    #events .content {
+        padding: 30px 15px;
+    }
+
+    #events .content li {
+        float: none;
+        text-align: center;
+    }
+
+    #events .content li a {
+        padding: 10px;
+    }
+
+    #events .content li.active a {
+        border-bottom-color: #ccc;
+    }
+}

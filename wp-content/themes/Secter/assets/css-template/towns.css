@@ -1,0 +1,437 @@
+.about-us .banner {
+    width: 100%;
+    position: relative;
+}
+
+.about-us .banner .relative-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-us .banner .relative-block .title {
+    display: block;
+    padding: 30px 0;
+    line-height: 27px;
+    color: #082d3f;
+    text-align: center;
+    font-family: "Roboto Condensed Light";
+    font-size: 42px;
+    text-transform: uppercase;
+    background: #fff;
+}
+
+.about-us .wrapper {
+    position: relative;
+}
+
+.about-us .sidebar {
+    display: block;
+    width: 100%;
+    background: white;
+}
+
+.about-us .mobile-sidebar {
+    display: none;
+}
+
+.about-us .sidebar .menu .open-button {
+    top: 10px;
+    right: 10px;
+    z-index: 99999;
+    position: absolute;
+}
+
+.about-us .sidebar .menu > li > .open-button {
+    top: 20px;
+    right: 10px;
+    z-index: 9;
+    position: absolute;
+}
+
+.about-us .sidebar .menu .open-button:hover {
+    cursor: pointer;
+}
+
+.about-us .sidebar .menu .open-button:after {
+    font-family: "FontAwesome";
+    content: "\f055";
+    color: #aaa;
+}
+
+.about-us .sidebar .menu .open > .open-button:after {
+    content: "\f056";
+}
+
+.about-us .sidebar .menu li {
+    position: relative;
+}
+
+.about-us .sidebar .menu {
+    padding: 40px 60px 0 0;
+}
+
+.about-us .sidebar .menu a {
+    display: inline-block;
+    color: #666;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.about-us .sidebar .menu .sub-menu {
+    display: none;
+    list-style-type: disc;
+}
+
+.about-us .sidebar .menu > li > ul {
+    padding: 0 0 30px 40px !important;
+    list-style-type: disc;
+}
+
+.about-us .sidebar .menu li {
+    padding: 10px 0 0;
+}
+
+.about-us .sidebar .menu > li > ul > li {
+    padding: 7px 0;
+}
+
+/*.about-us .sidebar .menu > li > ul > li:first-child {*/
+    /*padding-top: 0;*/
+/*}*/
+
+.about-us .sidebar .menu > li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0;
+}
+
+.about-us .sidebar .menu {
+    list-style-type: none;
+}
+
+.about-us .sidebar .menu > li > a {
+    padding: 20px 10px;
+    text-transform: uppercase;
+}
+
+.about-us .banner img {
+    width: 100%;
+    min-height: 150px;
+    height: 100%;
+    display: block;
+}
+
+.about-us .content {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.about-us .content a {
+    color: #1296a2;
+    display: inline-block;
+    font-family: Roboto;
+}
+
+.about-us .select-town-block {
+    background: #1296a2;
+    padding: 25px 30px;
+}
+
+.about-us .select-town-block h2 {
+    padding-bottom: 15px;
+    color: #fff;
+    font-family: "Roboto Condensed Light";
+    font-size: 32px;
+}
+
+.about-us .select-town-block .town-selected {
+    padding: 15px 20px;
+    color: #aaa;
+    background: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    position: relative;
+}
+
+.about-us .select-town-block .town-selected:hover {
+    cursor: pointer;
+}
+
+.about-us .select-town-block .town-selected span {
+    float: right;
+    display: inline-block;
+}
+
+.about-us .select-town-block .town-selected span:after {
+    font-family: "FontAwesome";
+    content: "\f0d7";
+}
+
+.about-us .select-town-block .town-selected.open span:after {
+    font-family: "FontAwesome";
+    content: "\f0d8";
+}
+
+.about-us .select-town-block ul {
+    border-top: 1px solid #efefef;
+    display: none;
+    position: absolute;
+    max-height: 210px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 0 20px;
+    width: calc(100% - 60px);
+    background: white;
+}
+
+.about-us .select-town-block li {
+    padding: 10px 20px;
+}
+
+.about-us .select-town-block a {
+    display: block;
+    color: #082d3f;
+}
+
+.about-us .content h1 {
+    display: block;
+    color: #1296a2;
+    font-family: "Roboto Condensed Light";
+    font-size: 44px;
+    padding: 50px 0 20px;
+    text-transform: uppercase;
+}
+
+.about-us .main-block p,
+.about-us .second-block p {
+    color: #666;
+    line-height: normal;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.about-us .main-block p{
+    line-height: 28px;
+}
+
+.about-us .second-block .text-block:not(:first-child) {
+    margin-top: 35px;
+}
+
+.about-us .content img {
+    display: block;
+    width: 100%;
+}
+
+.about-us .content p img {
+    padding-top: 20px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.about-us .content .inner-text {
+    margin-left: 20px;
+}
+
+.about-us .content .inner-text .link,
+.about-us .content .inner-text .website {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+.about-us .content .inner-text .link:hover,
+.about-us .content .inner-text .website:hover {
+    color: #1296a2;
+}
+
+.about-us .content .inner-text .link {
+    margin-right: 30px;
+}
+
+.about-us .content .inner-text .website:after,
+.about-us .content .inner-text .link:after {
+    font-family: "FontAwesome";
+    margin-left: 5px;
+}
+
+.about-us .content .inner-text .website:after,
+.about-us .content .inner-text .link:after {
+    content: "\f138";
+}
+
+.about-us .content .second-block h2 {
+    color: #1296a2;
+    line-height: normal;
+    font-family: "Roboto Condensed Light";
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+
+    .about-us .banner img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .about-us .banner .relative-block .title {
+        padding: 14px 0;
+        color: #121f32;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .about-us .mobile-sidebar {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .about-us .mobile-sidebar .current-page {
+        margin-top: 40px;
+        padding: 15px;
+        color: #666;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        position: relative;
+        text-transform: uppercase;
+        border-radius: 3px;
+        border: 1px solid #e4e4e4;
+    }
+
+    .about-us .mobile-sidebar .current-page.open {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .about-us .mobile-sidebar .current-page span {
+        float: right;
+        display: inline-block;
+    }
+
+    .about-us .mobile-sidebar .current-page span:after {
+        font-family: "FontAwesome";
+        content: "\f107";
+    }
+
+    .about-us .mobile-sidebar .current-page.open span:after {
+        content: "\f106";
+    }
+
+    .about-us .mobile-sidebar ul {
+        display: none;
+        background: white;
+        position: absolute;
+        z-index: 2;
+        width: calc(100% - 30px);
+        max-height: 180px;
+        border: 1px solid #e4e4e4;
+        border-top: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .about-us .mobile-sidebar ul li a {
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .about-us .mobile-sidebar {
+        display: block;
+        background: white;
+    }
+
+    .about-us .sidebar {
+        display: none;
+    }
+
+    .about-us .content {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .about-us .select-town-block h2 {
+        font-size: 28px;
+    }
+
+    .about-us .select-town-block {
+        padding: 20px 15px;
+    }
+
+    .about-us .select-town-block ul {
+        width: calc(100% - 30px);
+    }
+
+    .about-us .content h1 {
+        text-align: center;
+        padding: 45px 0 25px;
+        font-size: 28px;
+    }
+
+    .about-us .content .main-block {
+        margin: 0 15px;
+    }
+
+    .about-us .content img {
+        margin: 10px 0 20px;
+    }
+
+    .about-us .content p img {
+        padding: 0;
+    }
+
+    .about-us .content .inner-text {
+        margin: 0;
+    }
+
+    .about-us .content .second-block h2 {
+        margin-bottom: 0px;
+    }
+
+    .about-us .second-block .text-block {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ccc;
+        margin: 25px 15px 0;
+    }
+
+    .about-us .second-block .text-block:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-us .banner .relative-block .title {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-us .sidebar .menu li:hover,
+    .about-us .sidebar .menu .current-menu-item {
+        border-bottom-color: #2a9daa;
+    }
+
+    .about-us .sidebar .menu span:hover:after {
+        color: #2a9daa;
+    }
+
+    .about-us .sidebar .menu a:hover,
+    .about-us .sidebar .menu .current-menu-item > a {
+        color: #1296a2;
+    }
+
+    .about-us .select-town-block li:hover {
+        background-color: #082d3f;
+    }
+
+    .about-us .select-town-block li:hover a {
+        color: #fff;
+    }
+}

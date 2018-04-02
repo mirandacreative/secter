@@ -1,0 +1,484 @@
+.special-landing .banner {
+    width: 100%;
+    position: relative;
+}
+
+.special-landing .banner img {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    display: block;
+}
+
+.special-landing .banner .relative-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.special-landing .banner .relative-block .title {
+    display: block;
+    background: #299ca9;
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.special-landing .main-block h2 {
+    padding-top: 60px;
+    display: inline-block;
+    color: #2a9eab;
+    font-family: "Roboto Condensed";
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+.special-landing .main-block h3 {
+    color: #082d3f;
+    padding-top: 30px;
+    font-family: Roboto;
+    font-size: 28px;
+}
+
+.special-landing .main-block .text-block {
+    color: #666;
+    padding-top: 15px;
+    text-align: justify;
+    line-height: 28px;
+    padding-bottom: 60px;
+    font-family: "Open Sans";
+    font-size: 18px;
+}
+
+.special-landing .slider {
+    position: relative;
+    padding: 65px 0 85px;
+    background: #082d3f;
+}
+
+.special-landing .slider .owl-carousel .owl-item{
+    height: 100%;
+}
+
+.special-landing .slider .owl-prev,
+.special-landing .slider .owl-next {
+    position: absolute;
+    top: calc(50% - 49px);
+    height: 98px;
+    width: 98px;
+    background-color: rgba(18, 150, 162, 0.8);
+    z-index: 9;
+}
+
+.special-landing .slider .owl-prev span:after,
+.special-landing .slider .owl-next span:after {
+    font-family: "FontAwesome";
+    content: "\f054";
+    position: absolute;
+    top: calc(50% - 19px);
+    left: calc(50% - 12px);
+    color: white;
+    font-size: 37px;
+}
+
+.special-landing .slider .owl-prev {
+    left: 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.special-landing .slider .owl-next {
+    right: 0;
+}
+
+.special-landing .slider .item {
+    background: white;
+    margin: 1px;
+}
+
+.special-landing .slider .item h2 {
+    font-family: 'FrancoisOne';
+    color: #082d3f;
+    padding: 80px 0 45px;
+    text-align: center;
+    font-size: 82px;
+}
+
+.special-landing .slider .item .text-block {
+    color: #666;
+    text-align: center;
+    padding: 0 50px 55px;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.featured-properties {
+    background: #efefef;
+    padding-bottom: 50px;
+}
+
+.featured-properties h2 {
+    color: #666;
+    font-family: "Roboto Condensed Light";
+    font-size: 44px;
+    padding: 50px 0 35px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.featured-properties .view-properties {
+    display: inline-block;
+    color: #299ca9;
+    margin-left: 15px;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.featured-properties .item {
+    color: #666;
+    margin-left: -15px;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.featured-properties .item img {
+    width: 100%;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.featured-properties .item .text-block {
+    min-height: 64px;
+}
+
+.featured-properties .item a {
+    color: #121f32;
+    font-family: "Roboto";
+}
+
+.featured-properties .item .pdf {
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 86px;
+    margin: 25px auto 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.featured-properties .item .pdf:after {
+    font-family: "FontAwesome";
+    margin-left: 5px;
+    content: "\f138";
+}
+
+.featured-properties .special-item {
+    background: white;
+    border: 1px solid #c1c1c1;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.featured-properties .special-item .logo {
+    padding-top: 45px;
+    display: block;
+    margin: 0 auto;
+}
+
+.featured-properties .special-item h3 {
+    margin-top: 35px;
+    text-align: center;
+    padding: 0 40px;
+    color: #666;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.featured-properties .special-item .text-block {
+    color: #666;
+    padding: 10px 35px 0;
+    line-height: 28px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.featured-properties .special-item .learn-more {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: block;
+    color: #666;
+    width: 86px;
+    margin: 0 auto 15px;
+    border-bottom: 2px solid transparent;
+    font-family: Roboto;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.featured-properties .special-item .learn-more:after {
+    margin-left: 10px;
+    font-family: "FontAwesome";
+    content: "\f055";
+}
+
+.article-block {
+    padding-top: 30px;
+    padding-bottom: 85px;
+}
+
+.article-block .item {
+    margin-top: 50px;
+}
+
+.article-block .item img,
+.article-block .item .learn-more {
+    width: 100%;
+    display: block;
+}
+
+.article-block .item .title-block h2 {
+    color: #666;
+    margin-bottom: 15px;
+    font-family: "Roboto Condensed Light";
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.article-block .item .text-block {
+    margin-top: 15px;
+    color: #666;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.article-block .item .learn-more {
+    border: 1px solid #31b6c1;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    color: #1296a2;
+    font-family: Roboto;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.article-block .list-item > div:nth-child(3n+1) .item {
+    margin-left: -15px;
+}
+
+.article-block .list-item > div:nth-child(3n+3) .item {
+    margin-right: -15px;
+}
+
+.article-block .list-item > div:nth-child(3n+2) .item {
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+
+@media (max-width: 991px) {
+
+    .special-landing .banner img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .special-landing .banner .relative-block .title {
+        padding: 14px 0;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .special-landing .main-block h2 {
+        font-size: 28px;
+        padding-top: 40px;
+    }
+
+    .special-landing .main-block h3 {
+        padding-top: 25px;
+        font-size: 18px;
+    }
+
+    .special-landing .main-block .text-block {
+        font-size: 16px;
+        text-align: left;
+        padding-bottom: 45px;
+    }
+
+    .featured-properties .item-list > div:nth-child(even) .item,
+    .featured-properties .item-list > div:nth-child(even) .special-item {
+        margin-right: -15px;
+        margin-left: 0;
+    }
+
+    .featured-properties .item-list > div:nth-child(odd) .item,
+    .featured-properties .item-list > div:nth-child(odd) .special-item {
+        margin-right: 0;
+        margin-left: -15px;
+    }
+
+    .article-block .list-item > div:nth-child(2n+1) .item {
+        margin-left: -15px;
+        margin-right: 0;
+    }
+
+    .article-block .list-item > div:nth-child(2n+2) .item {
+        margin-right: -15px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .special-landing .slider {
+        padding: 45px 35px 40px;
+    }
+
+    .special-landing .slider .item h2 {
+        padding: 65px 0 40px;
+    }
+
+    .special-landing .slider .item .text-block {
+        font-size: 14px;
+        padding: 0 30px 50px;
+    }
+
+    .special-landing .slider .owl-prev,
+    .special-landing .slider .owl-next {
+        width: 50px;
+        height: 50px;
+        top: calc(50% - 25px);
+    }
+
+    .special-landing .slider .owl-prev span:after,
+    .special-landing .slider .owl-next span:after {
+        font-size: 19px;
+        top: calc(50% - 9px);
+        left: calc(50% - 6px);
+    }
+
+    .featured-properties {
+        padding: 0 15px 35px;
+    }
+
+    .featured-properties .item {
+        margin: 0;
+    }
+
+    .featured-properties .item-list > div:nth-child(odd) .item,
+    .featured-properties .item-list > div:nth-child(even) .item,
+    .featured-properties .item-list > div:nth-child(odd) .special-item,
+    .featured-properties .item-list > div:nth-child(even) .special-item {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .featured-properties h2 {
+        padding-top: 30px;
+        font-size: 32px;
+        padding-bottom: 25px;
+    }
+
+    .featured-properties .view-properties {
+        margin: 0;
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .featured-properties .item .text-block {
+        min-height: initial;
+    }
+
+    .featured-properties .item .pdf {
+        margin-bottom: 25px;
+    }
+
+    .article-block {
+        padding: 0;
+    }
+
+    .article-block .item {
+        position: relative;
+    }
+
+    .article-block .list-item > div:nth-child(2n+1) .item,
+    .article-block .list-item > div:nth-child(2n+2) .item {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 0;
+    }
+
+    .article-block .item .title-block {
+        position: absolute;
+    }
+
+    .article-block .list-item > div:nth-child(2n+2) .image-block {
+        float: left;
+    }
+
+    .article-block .list-item > div:nth-child(2n+1) .image-block {
+        float: right;
+    }
+
+    .article-block .list-item > div:nth-child(2n+2) .title-block {
+        right: 0;
+    }
+
+    .article-block .item .title-block,
+    .article-block .item .image-block {
+        width: 50%;
+        height: 100%;
+        display: block;
+    }
+
+    .article-block .item .title-block a {
+        bottom: 10px;
+        display: block;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .article-block .item .title-block h2 {
+        font-size: 20px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    .article-block .item .text-block,
+    .article-block .item .learn-more {
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .featured-properties .item .pdf:hover,
+    .featured-properties .special-item .learn-more:hover {
+        color: #2a9eab;
+        border-color: #2a9eab;
+    }
+
+    .featured-properties .special-item {
+        margin-top: -79px;
+    }
+
+    .article-block .item .learn-more:hover {
+        background-color: #018f9b;
+        color: white;
+    }
+}

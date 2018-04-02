@@ -1,0 +1,58 @@
+# Miranda Creative Git Ignore version 2018.1.1
+# Wordpress #
+*.log
+.htaccess
+
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+wp-config-sample.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/uploads/backup*
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+wp-content/*.sql
+wp-content/*.sql.gz
+wp-content/*.sql.bz2
+wp-content/backup*
+wp-content/plugins/
+wp-snapshots/
+wp-snapshots/*
+wp-snapshots/.*
+
+/readme.html
+/license.txt
+
+#   Node    #
+node_modules/
+
+#   OSX     #
+.DS_Store
+
+#  Sublime  #
+sftp-config.json
+.sublime-workspace
+
+#  Wordmove #
+Movefile
+Movefile.yml
+movefile.yml
+
+#  Jetbrains #
+.idea/
+.idea
+
+#Shell scripts Etc. #
+.sh
+.backup
+.sql
+.gz
+.zip
+.7z
+

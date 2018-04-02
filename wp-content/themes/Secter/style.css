@@ -1,0 +1,1246 @@
+/*
+Theme Name: Secter
+Description: Secter
+Author: Secter
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('./assets/fonts/font-awesome/fontawesome-webfont.eot?v=3.2.1');
+    src: url('./assets/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('./assets/fonts/font-awesome/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('./assets/fonts/font-awesome/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('./assets/fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FrancoisOne';
+    src: url('./assets/fonts/francois-one/FrancoisOne.eot');
+    src: local('☺'), url('./assets/fonts/francois-one/FrancoisOne.woff') format('woff'), url('./assets/fonts/francois-one/FrancoisOne.ttf') format('truetype'), url('./assets/fonts/francois-one/FrancoisOne.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('./assets/fonts/roboto-condensed/RobotoCondensed-Regular.eot');
+    src: local('☺'), url('./assets/fonts/roboto-condensed/RobotoCondensed-Regular.woff') format('woff'), url('./assets/fonts/roboto-condensed/RobotoCondensed-Regular.ttf') format('truetype'), url('./assets/fonts/roboto-condensed/RobotoCondensed-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/roboto/Roboto-Regular.eot');
+    src: local('☺'), url('./assets/fonts/roboto/Roboto-Regular.woff') format('woff'), url('./assets/fonts/roboto/Roboto-Regular.ttf') format('truetype'), url('./assets/fonts/roboto/Roboto-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/lato/Lato-Regular.eot');
+    src: local('☺'), url('./assets/fonts/lato/Lato-Regular.woff') format('woff'), url('./assets/fonts/lato/Lato-Regular.ttf') format('truetype'), url('./assets/fonts/lato/Lato-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('./assets/fonts/myriad-pro/Myriad Pro Regular.eot');
+    src: local('☺'), url('./assets/fonts/myriad-pro/Myriad Pro Regular.woff') format('woff'), url('./assets/fonts/myriad-pro/Myriad Pro Regular.ttf') format('truetype'), url('./assets/fonts/myriad-pro/Myriad Pro Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/open-sans/OpenSans.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/open-sans/OpenSans.woff') format('woff'), url('./assets/fonts/open-sans/OpenSans.ttf') format('truetype'), url('./assets/fonts/open-sans/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Light';
+    src: url('./assets/fonts/roboto-condensed-light/RobotoCondensed-Light.eot');
+    src: local('☺'), url('./assets/fonts/roboto-condensed-light/RobotoCondensed-Light.woff') format('woff'), url('./assets/fonts/roboto-condensed-light/RobotoCondensed-Light.ttf') format('truetype'), url('./assets/fonts/roboto-condensed-light/RobotoCondensed-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.alignright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+}
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url('./assets/images/processing.gif') no-repeat center center;
+}
+
+header .logo-header {
+    padding-top: 30px;
+}
+
+header .header-menu,
+header .top-menu {
+    clear: both;
+}
+
+header .hamburger-button,
+header .search-button-mob,
+#home header .search-button-mob {
+    display: none;
+    z-index: 99999;
+}
+
+header .top-menu {
+    padding-top: 15px;
+}
+
+header .header-menu {
+    padding-top: 65px;
+}
+
+header #top-menu,
+header #header-menu {
+    float: right;
+}
+
+header #top-menu li a {
+    padding: 5px 10px;
+    font-family: 'Roboto';
+    color: #888;
+    font-size: 14px;
+}
+
+header #top-menu li.user-item-menu:after {
+    color: #e0e0e0;
+}
+
+header #top-menu li.facebook-link a:after {
+    font-family: FontAwesome;
+    color: #3f6b87;
+    font-size: 16px;
+    content: "\f082";
+}
+
+header #top-menu li:after {
+    content: '|';
+    color: #082d3e;
+    font-size: 14px;
+}
+
+header #top-menu li:last-child:after {
+    content: '';
+}
+
+header #header-menu li {
+    position: relative;
+}
+
+header #header-menu .sub-menu {
+    position: absolute;
+    z-index: 10;
+}
+
+header #header-menu .sub-menu {
+    top: 0;
+    display: none;
+    right: 240px;
+    min-width: 240px;
+    background: #34a5af;
+}
+
+header #header-menu > ul > li > .sub-menu {
+    top: 100%;
+    right: 0;
+    left: 0;
+}
+
+header #header-menu .sub-menu a {
+    color: #e0e0e0;
+    display: block;
+    border-bottom: 1px solid rgba(219, 219, 219, 0.3);
+    padding: 15px 5px 5px;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+header #header-menu .sub-menu a:hover {
+    border-color: white;
+    color: white;
+}
+
+header #header-menu .sub-menu li {
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+header #header-menu .sub-menu li:first-child {
+    padding-top: 5px;
+}
+
+header #header-menu .sub-menu li:last-child {
+    padding-bottom: 15px;
+}
+
+header #header-menu > ul > li > .sub-menu > li:last-child {
+    padding-bottom: 20px;
+}
+
+header #header-menu > ul > li > a {
+    padding: 8px 17px 12px;
+    color: #018f9b;
+    display: block;
+    font-family: 'Roboto';
+    border-bottom: 5px solid transparent;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+header #header-menu > ul > .current-menu-item > a,
+header #header-menu > ul > .current-page-ancestor > a,
+header #header-menu > ul > .current-menu-ancestor > a {
+    border-bottom: 5px solid #018f9b;;
+}
+
+header #header-menu > ul > li:hover:not(.search-button-menu-element) > a {
+    background: #34a5af;
+    color: white;
+}
+
+header #search-field-header-menu,
+header #search-field-header-mob {
+    font-family: "Lato";
+    transition: all 0.5s ease;
+    margin: 0 auto;
+    height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    text-align: left;
+    background-color: white;
+    border: 0 solid rgba(53, 53, 53, 0.6);
+    width: 570px;
+    margin-top: 20px;
+}
+
+header #search-field-header-menu {
+    display: block;
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: 41px;
+    z-index: 999;
+}
+
+header #search-field-header-mob {
+    display: block;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    padding: 0 10px;
+    margin-top: 0;
+    z-index: 9999;
+    border-color: #b6b6a7;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+header #search-field-header-menu .search-field,
+header #search-field-header-mob .search-field {
+    width: calc(100% - 50px);
+    height: 40px;
+    float: left;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+header #search-field-header-menu .search-word-button,
+header #search-field-header-mob .search-word-button {
+    border: none;
+    border-radius: 50%;
+    padding: 3px;
+    float: right;
+}
+
+header #search-field-header-menu .search-word-button:focus,
+header #search-field-header-mob .search-word-button:focus {
+    outline: none;
+}
+
+header #search-field-header-menu .search-word,
+header #search-field-header-mob .search-word {
+    border: 1px solid transparent;
+    width: 100%;
+    padding: 8px 5px;
+}
+
+header #search-field-header-menu .search-word:focus,
+header #search-field-header-mob .search-word:focus {
+    border: dashed 1px black;
+    border-radius: 4px;
+    outline: none;
+}
+
+header #search-field-header-menu .submit,
+header #search-field-header-mob .submit {
+    background: transparent url('./assets/images/search-button.png') no-repeat center;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: none;
+    float: right;
+    margin: 4px 0;
+    padding: 0;
+}
+
+header #top-menu li:first-child a {
+    padding-left: 0;
+}
+
+header #top-menu li:last-child a {
+    padding-right: 0;
+}
+
+header #top-menu > ul > li,
+header #header-menu > ul > li {
+    float: left;
+}
+
+header #header-menu > ul > li {
+    border-left: 2px solid #f5f5f5;
+}
+
+#home header #header-menu li.search-button-menu-element {
+    display: none;
+}
+
+header #header-menu li.search-button-menu-element a:after,
+header .search-button-mob:after {
+    font-family: 'FontAwesome';
+    content: "\f002";
+    font-size: 13px;
+}
+
+header .registration-box,
+header .login-box {
+    display: none;
+    width: 555px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 999999;
+    background: #fff;
+    transform: translate(-50%, -50%);
+}
+
+header .registration-box img,
+header .login-box img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+header .inner-box .title {
+    color: #666;
+    padding-top: 50px;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 34px;
+    display: block;
+    text-transform: uppercase;
+}
+
+header .registration-box .title {
+    padding-bottom: 20px;
+}
+
+header .inner-box .message {
+    display: none;
+    position: absolute;
+    top: 114px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header .login-box #forgotform {
+    display: none;
+}
+
+header .login-box .title {
+    color: #1296a2;
+}
+
+header .login-box .text {
+    color: #666666;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: 250px;
+    text-align: center;
+    line-height: 24px;
+    display: block;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+header .registration-box .text {
+    padding-top: 10px;
+    display: block;
+    padding-bottom: 10px;
+    color: #aaaaaa;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: normal;
+}
+
+header .inner-box input {
+    color: #aaaaaa;
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #aaaaaa;
+    background-color: #fafafa;
+}
+
+header .inner-box input:focus {
+    color: #082d3f;
+}
+
+header .inner-box input[type="submit"] {
+    background-color: #00727c;
+    border: none;
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+header #rememberme {
+    width: inherit;
+    margin-top: 0;
+}
+
+header .forgetmenot label {
+    padding-top: 20px;
+    color: #666666;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+header .forget-pwd {
+    color: #1296a2;
+    font-family: Roboto;
+    font-size: 14px;
+    text-decoration: underline;
+    float: right;
+    padding-top: 25px;
+}
+
+header .private-policy {
+    padding-top: 15px;
+    display: block;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #666;
+}
+
+header .private-policy a {
+    color: #1296a2;
+    text-decoration: underline;
+}
+
+header .close-all-layers {
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: right;
+    background: url("./assets/images/close-button-header.png") no-repeat center /cover;
+    cursor: pointer;
+}
+
+header .inner-box {
+    clear: both;
+    padding: 10px 75px 60px;
+}
+
+/* Town */
+
+.towns-of-SC {
+    background-color: #018f9b;
+}
+
+.towns-of-SC h2 {
+    padding: 55px 0;
+    text-align: center;
+    color: white;
+    font-family: "Roboto Condensed";
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+.towns-of-SC .map {
+    position: relative;
+}
+
+.towns-of-SC .map img {
+    width: 100%;
+    display: block;
+}
+
+.towns-of-SC .map .link-town {
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    display: block;
+    margin-top: 0;
+    transition: all .5s ease;
+    text-transform: uppercase;
+}
+
+/* End town */
+
+footer .top-footer-menu {
+    background: #263244;
+    padding: 20px 0;
+}
+
+footer .body-footer {
+    background: #263244;
+}
+
+footer .body-footer .logo-footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer .body-footer .center-block-body-footer {
+    padding-top: 50px;
+    padding-left: 30px;
+    color: #018f9b;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+footer .body-footer .right-block-body-footer {
+    color: #768491;
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+footer #top-footer-menu {
+    float: right;
+}
+
+#home footer #top-footer-menu {
+    float: none;
+}
+
+footer .top-footer-menu li {
+    float: left;
+    padding: 0 15px;
+    border-left: 1px solid #018f9b;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+footer .top-footer-menu li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+footer .top-footer-menu li a {
+    color: #018f9b;
+}
+
+footer .top-footer-menu li a:hover,
+footer .top-footer-menu .current-menu-item a {
+    color: white;
+}
+
+footer .top-footer-menu .facebook-link {
+    border-left: none;
+    float: left;
+}
+
+#home footer .top-footer-menu .facebook-link {
+    float: right;
+}
+
+footer .top-footer-menu .facebook-link a,
+footer .bottom-footer-menu .facebook-link a {
+    color: #b9d5d8;
+    text-transform: capitalize;
+}
+
+footer .top-footer-menu .facebook-link a:after {
+    line-height: 12px;
+}
+
+footer .top-footer-menu .facebook-link a:after,
+footer .bottom-footer-menu .facebook-link a:after {
+    font-family: FontAwesome;
+    font-size: 22px;
+    margin-left: 10px;
+    content: "\f082";
+}
+
+#home footer .special-footer-block {
+    display: block;
+}
+
+footer .special-footer-block {
+    display: none;
+    background: #283549;
+    padding: 50px 0 70px;
+}
+
+footer .special-footer-block h2 {
+    padding-bottom: 20px;
+    font-family: "Roboto Condensed Light";
+    font-size: 36px;
+    text-transform: uppercase;
+    color: white;
+}
+
+footer .special-footer-block .events-list .item {
+    margin-top: 25px;
+}
+
+footer .special-footer-block .events-list .date-event {
+    background: url("./assets/images/calendar-image.png") no-repeat center center /cover;
+    width: 58px;
+    height: 63px;
+    margin-right: 20px;
+    float: left;
+}
+
+footer .special-footer-block .events-list span {
+    color: #283549;
+    display: block;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    text-transform: uppercase;
+}
+
+footer .special-footer-block .events-list .month {
+    padding-top: 25px;
+    font-size: 12px;
+}
+
+footer .special-footer-block .events-list .day {
+    font-size: 18px;
+}
+
+footer .special-footer-block .events-list .link {
+    padding-top: 10px;
+    font-family: "Roboto";
+    min-height: 63px;
+    font-size: 18px;
+    display: block;
+    color: white;
+}
+
+footer .special-footer-block .events-list .link:hover {
+    color: #0096a4;
+    cursor: pointer;
+}
+
+footer .black-layer,
+header .black-layer {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 999999;
+    left: 0;
+}
+
+footer .content-layer {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+
+footer .content-layer .content {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+footer .content-layer .time {
+    display: inline-block;
+}
+
+footer .content-layer .title {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+footer .close-all-layers {
+    float: right;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+footer .close-all-layers:before {
+    font-family: 'FontAwesome';
+    content: "\f00d";
+    font-size: 20px;
+}
+
+footer .special-footer-block #newsletter-form .form span {
+    display: block;
+    color: #bbb;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+footer .special-footer-block #newsletter-form .email {
+    margin-top: 20px;
+}
+
+footer .special-footer-block #newsletter-form .field {
+    border: none;
+    padding: 14px;
+    width: 100%;
+}
+
+footer .special-footer-block #newsletter-form .submit {
+    color: white;
+    font-family: "Roboto";
+    background: #01737d;
+    border: 1px solid transparent;
+    outline: none;
+    margin-top: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer .special-footer-block #newsletter-form .submit:hover {
+    background-color: #121f32;
+    border: 1px solid #018f9b;
+}
+
+footer .bottom-footer-menu {
+    background: #121f32;;
+}
+
+footer .bottom-footer-menu li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+footer .bottom-footer-menu .user-item-menu,
+footer .bottom-footer-menu .facebook-link {
+    display: none;
+}
+
+footer .bottom-footer-menu li a {
+    padding: 20px 15px;
+    display: block;
+    color: #b9d5d8;
+    font-family: "Roboto";
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+footer .bottom-footer-menu .current-menu-item a,
+footer .bottom-footer-menu .current-page-ancestor a {
+    padding: 20px 10px;
+}
+
+footer .bottom-footer-menu li a:hover,
+footer .bottom-footer-menu .current-menu-item a,
+footer .bottom-footer-menu .current-page-ancestor a {
+    background: #283549;
+    color: #0096a4;
+}
+
+@media (max-width: 1199px) {
+
+    header .logo-header {
+        padding-top: 15px;
+        padding-bottom: 13px;
+    }
+
+    header .logo-header .name {
+        color: #626266;
+        font-family: "Myriad Pro";
+        line-height: 16px;
+        padding-top: 4px;
+        margin-left: 5px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    header .header-menu {
+        padding-top: 53px;
+    }
+
+    header #header-menu > ul > li > .sub-menu {
+        top: 40px;
+    }
+
+    header #header-menu > ul > li > a {
+        padding: 8px 5px 12px;
+        font-size: 15px;
+    }
+
+    footer #menu-bottom-footer-menu {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    header {
+        position: relative;
+    }
+
+    header .inner-header {
+        position: relative;
+        padding: 0 10px;
+    }
+
+    header .hamburger-button {
+        position: absolute;
+        display: block;
+    }
+
+    header .hamburger-button {
+        top: 20px;
+        right: 20px;
+    }
+
+    header .hamburger-button:after {
+        font-family: "FontAwesome";
+        content: "\f0c9";
+    }
+
+    header .search-button-mob {
+        bottom: 20px;
+        right: 20px;
+        display: block;
+        position: absolute;
+    }
+
+    header .hamburger-menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background-color: #f4f4f4;
+        border-bottom: 1px solid #b6b6a7;
+        border-top: 1px solid #b6b6a7;
+        box-shadow: 0 5px 5px rgba(14, 11, 15, 0.3);
+        top: 95px;
+        z-index: 10;
+    }
+
+    header .hamburger-menu #menu-header-menu > li,
+    header .hamburger-menu #menu-top-menu > li {
+        padding: 10px 0;
+        margin: 0 10px;
+        display: block;
+        font-family: "Roboto";
+        font-size: 16px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(182, 182, 167, 0.6);
+    }
+
+    header .hamburger-menu #menu-header-menu > li.current-menu-item,
+    header .hamburger-menu #menu-top-menu > li.current-menu-item {
+        padding: 10px;
+        margin: 0;
+        background: #0097a6;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: #5a8a1b;
+    }
+
+    header .hamburger-menu #menu-header-menu > li.current-menu-item a,
+    header .hamburger-menu #menu-top-menu > li.current-menu-item a {
+        color: white;
+    }
+
+    header .hamburger-menu #menu-header-menu > li.open {
+        padding: 10px;
+        margin: 0;
+        background: #0097a6;
+        border-top: 1px solid;
+        border-color: #5a8a1b;
+    }
+
+    header .hamburger-menu #menu-header-menu > li.open a {
+        color: white;
+    }
+
+    header .hamburger-menu #menu-header-menu > li.open .open-button {
+        right: 20px;
+    }
+
+    header .hamburger-menu #menu-header-menu > li:last-child {
+        border-color: #5a8a1b;
+    }
+
+    header .hamburger-menu #menu-header-menu li {
+        position: relative;
+    }
+
+    header .hamburger-menu #menu-header-menu .search-button-menu-element {
+        display: none;
+    }
+
+    header .hamburger-menu #menu-header-menu .open-button {
+        right: 10px;
+        position: absolute;
+    }
+
+    header .hamburger-menu #menu-header-menu .open-button:after {
+        font-family: "FontAwesome";
+        content: "\f067";
+    }
+
+    header .hamburger-menu #menu-header-menu .open > .open-button:after {
+        content: "\f068";
+    }
+
+    header .hamburger-menu #menu-header-menu .sub-menu li:last-child:not(.menu-item-has-children),
+    header .hamburger-menu #menu-header-menu .sub-menu li.last-child.menu-item-has-children,
+    header .hamburger-menu #menu-header-menu .sub-menu li.menu-item-has-children:last-child,
+    header .hamburger-menu #menu-header-menu .sub-menu {
+        padding: 10px 0 0;
+    }
+
+    header .hamburger-menu #menu-header-menu > .open > .sub-menu {
+        padding: 10px;
+    }
+
+    header .hamburger-menu #menu-header-menu .sub-menu li {
+        padding: 10px 0;
+    }
+
+    header .hamburger-menu #menu-header-menu a {
+        color: #52523c;
+    }
+
+    header .hamburger-menu #menu-header-menu .sub-menu {
+        display: none;
+    }
+
+    header .hamburger-menu #menu-top-menu a {
+        color: #6d6d50;
+        text-transform: capitalize;
+        font-family: "Roboto";
+        font-size: 14px;
+    }
+
+    header .header-menu,
+    header .top-menu {
+        display: none;
+    }
+
+    header .registration-box,
+    header .login-box {
+        top: 0;
+        transform: translate(-50%);
+    }
+
+    .towns-of-SC .map .link-town {
+        font-size: 10px;
+    }
+
+    footer .body-footer .center-block-body-footer {
+        padding-top: 0;
+    }
+
+    footer .body-footer .right-block-body-footer {
+        text-align: left;
+    }
+
+    footer .arrow-up {
+        display: block;
+        position: fixed;
+        color: white;
+        background: #17afb3;
+        bottom: 20px;
+        width: 28px;
+        left: 20px;
+        z-index: 99999;
+        padding: 6px 0;
+        text-align: center;
+    }
+
+    footer .arrow-up span {
+        display: block;
+    }
+
+    footer .arrow-up span:after {
+        font-family: "FontAwesome";
+        content: "\f106";
+    }
+}
+
+@media (max-width: 767px) {
+
+    #home header .search-button-mob {
+        display: block;
+    }
+
+    .towns-of-SC h2 {
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .towns-of-SC .map .link-town {
+        font-size: 5px;
+    }
+
+    footer .top-footer-menu {
+        padding: 25px 15px 15px;
+    }
+
+    footer #top-footer-menu {
+        float: left;
+    }
+
+    footer .top-footer-menu li {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    footer .special-footer-block h2 {
+        padding: 0;
+        font-size: 32px;
+    }
+
+    footer .special-footer-block {
+        padding: 25px 0 50px;
+    }
+
+    footer .special-footer-block .events-list,
+    footer .special-footer-block #newsletter-form {
+        padding: 0 20px;
+    }
+
+    footer .special-footer-block .events-list .item {
+        margin-top: 20px;
+    }
+
+    footer .special-footer-block .events-list .link {
+        padding: 0 5px 10px;
+        min-height: initial;
+        border-bottom: 1px solid #0096a4;
+    }
+
+    footer .special-footer-block #newsletter-form {
+        margin-top: 45px;
+    }
+
+    footer .special-footer-block #newsletter-form .name {
+        margin-top: 35px;
+    }
+
+    footer .body-footer .logo-footer {
+        display: none;
+    }
+
+    footer .body-footer .center-block-body-footer,
+    footer .body-footer .right-block-body-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #home footer .facebook-footer-widget {
+        padding-top: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #home footer .facebook-footer-widget span {
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer .bottom-footer-menu li {
+        display: none;
+    }
+
+    footer .bottom-footer-menu .facebook-link {
+        display: block;
+        width: 100%;
+    }
+
+    footer .bottom-footer-menu .facebook-link a {
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+
+    footer .bottom-footer-menu .facebook-link a:hover {
+        background: inherit;
+        color: #b9d5d8;
+    }
+
+    footer .top-footer-menu .facebook-link,
+    footer .special-footer-block .events-list .date-event {
+        display: none;
+    }
+}
+
+@media (max-width: 555px) {
+    header .registration-box,
+    header .login-box {
+        width: 100%;
+    }
+
+    header .inner-box {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer .content-layer {
+        width: calc(100% - 20px);
+    }
+
+    header .hamburger-menu,
+    header #search-field-header-mob {
+        top: 79px;
+    }
+
+    .tablet {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    header .hamburger-menu,
+    header #search-field-header-mob {
+        display: none !important;
+    }
+
+    .towns-of-SC .map .link-town:hover {
+        margin-top: -2.5px;
+        font-size: 20px;
+    }
+}

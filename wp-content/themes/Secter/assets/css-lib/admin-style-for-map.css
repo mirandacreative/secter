@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/font-awesome/fontawesome-webfont.eot?v=3.2.1');
+    src: url('../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/font-awesome/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../fonts/font-awesome/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/roboto-condensed/RobotoCondensed-Regular.eot');
+    src: local('☺'), url('../fonts/roboto-condensed/RobotoCondensed-Regular.woff') format('woff'), url('../fonts/roboto-condensed/RobotoCondensed-Regular.ttf') format('truetype'), url('../fonts/roboto-condensed/RobotoCondensed-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gallery_editor #publish {
+    float: right;
+}
+
+.button_add_menu {
+    clear: both;
+    padding: 20px 0;
+}
+
+.list-citys .delete_item_seting {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.delete_item_seting:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: FontAwesome;
+    content: "\f00d";
+    font-size: 20px;
+}
+
+.city_editors .container_for_position {
+    min-height: 210px;
+    margin: 20px auto;
+    border: 1px solid #23282d;
+    position: relative;
+}
+
+.city_editors .container_block-1-with-padding {
+    width: 1170px;
+}
+
+.city_editors #tabs .ui-state-active {
+    font-size: 20px;
+}
+
+.city_editor {
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.city_editor #publish {
+    float: right;
+}
+
+.list-citys {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.list-citys .city_seting {
+    width: calc(25% - 20px);
+    display: block;
+    padding: 10px;
+}
+
+.change_value_city {
+    width: 100%;
+}
+
+.item-city:focus,
+.item-city:hover,
+.item-city:visited,
+.item-city:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
+
+.item-city {
+    text-decoration: none;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    text-transform: uppercase;
+}
